@@ -1,0 +1,34 @@
+# Python virtual env
+.venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Datasets
+data/
+dataset/
+datasets/
+
+# Trained models
+model/
+models/
+*.keras
+*.h5
+
+# Uploads
+uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Frontend build
+dist/
+build/
+
+# OS
+.DS_Store
