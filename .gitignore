@@ -15,7 +15,6 @@ datasets/
 
 # Trained models
 model/
-models/
 *.keras
 *.h5
 
