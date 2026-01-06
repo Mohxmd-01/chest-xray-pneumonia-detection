@@ -18,6 +18,10 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/predict", predictRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Backend running successfully 🚀");
+});
+
 // MongoDB connection (SINGLE SOURCE OF TRUTH)
 mongoose
   .connect(process.env.MONGO_URI)
