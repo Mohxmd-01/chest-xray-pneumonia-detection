@@ -13,7 +13,7 @@ const Header = () => {
             <Activity className="h-5 w-5 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="text-lg font-bold text-foreground">PneumoScan</h1>
+            <h1 className="text-lg font-bold text-foreground">XRayIQ</h1>
             <p className="text-xs text-muted-foreground">AI-Powered Detection</p>
           </div>
         </div>

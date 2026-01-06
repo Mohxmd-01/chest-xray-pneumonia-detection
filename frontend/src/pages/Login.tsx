@@ -31,7 +31,7 @@ const Login = () => {
           <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl gradient-primary shadow-glow mb-4">
             <Activity className="h-8 w-8 text-primary-foreground" />
           </div>
-          <h1 className="text-3xl font-bold text-foreground">PneumoScan</h1>
+          <h1 className="text-3xl font-bold text-foreground">XRayIQ</h1>
           <p className="text-muted-foreground mt-2">AI-Powered Pneumonia Detection</p>
         </div>
 

@@ -39,7 +39,7 @@ const Index = () => {
             <div className="h-10 w-10 rounded-xl gradient-primary flex items-center justify-center shadow-glow">
               <Activity className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">PneumoScan</span>
+            <span className="text-xl font-bold text-foreground">XRayIQ</span>
           </div>
           <div className="flex items-center gap-3">
             <Link to="/login">
@@ -62,7 +62,7 @@ const Index = () => {
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Zap className="h-3.5 w-3.5" />
-              Powered by Advanced AI
+              Fast and Accurate Chest X-Ray Insights
             </div>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6">
               Detect Pneumonia{' '}
@@ -220,10 +220,10 @@ const Index = () => {
             <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
               <Activity className="h-4 w-4 text-primary-foreground" />
             </div>
-            <span className="font-semibold text-foreground">PneumoScan</span>
+            <span className="font-semibold text-foreground">XRayIQ</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2024 PneumoScan. All rights reserved.
+            © 2026 XRayIQ. All rights reserved.
           </p>
         </div>
       </footer>

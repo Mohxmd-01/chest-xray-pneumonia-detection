@@ -149,7 +149,7 @@ const Dashboard = () => {
                 Ready for Analysis
               </h3>
               <p className="text-muted-foreground max-w-xs">
-                Upload a chest X-ray image to get an instant AI-powered pneumonia
+                Upload a chest X-ray image to get an instant pneumonia
                 detection result
               </p>
             </div>
