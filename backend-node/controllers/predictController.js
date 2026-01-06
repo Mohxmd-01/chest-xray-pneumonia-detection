@@ -22,14 +22,12 @@ export const predict = async (req, res) => {
     form.append("file", req.file.buffer, req.file.originalname);
 
     // 3️⃣ Call FastAPI ML service
-    const mlResponse = await axios.post(
-      process.env.ML_API_URL || "http://127.0.0.1:8000/predict",
+     const mlResponse = await axios.post(
+      `${process.env.ML_SERVICE_URL}/predict`,
       form,
       {
-        headers: {
-          ...form.getHeaders(),
-          Authorization: `Bearer ${req.token || ""}`, // optional
-        },
+        headers: form.getHeaders(),
+        timeout: 20000,
       }
     );
 

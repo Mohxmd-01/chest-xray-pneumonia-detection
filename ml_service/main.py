@@ -38,10 +38,8 @@ def home():
 
 # 🔐 Protected prediction endpoint
 @app.post("/predict")
-async def predict(
-    file: UploadFile = File(...),
-    user=Depends(verify_token)  # JWT required
-):
+async def predict(file: UploadFile = File(...)):
+
     image_bytes = await file.read()
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
 
@@ -52,7 +50,6 @@ async def predict(
     confidence = float(prediction if prediction > 0.5 else 1 - prediction)
 
     return {
-        "user_id": user["id"],  # 👈 comes from JWT
         "prediction": result,
         "confidence": round(confidence * 100, 2)
     }
