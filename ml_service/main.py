@@ -5,7 +5,7 @@ from PIL import Image
 import io
 from utils.preprocess import preprocess_image
 from utils.jwt_auth import verify_token  # 🔐 JWT verification
-#https://drive.google.com/file/d/1JvxjXGc5rTMAIMz57EkRxYlvzc6frS4E/view?usp=sharing
+#https://drive.google.com/file/d/1ZswLsHHJDWDihWBAQ9pFnS8XGL8hJL2B/view?usp=sharing
 # Optional: install gdown if not already installed
 try:
     import gdown
@@ -19,7 +19,7 @@ app = FastAPI(title="Pneumonia Detection API")
 # Model setup
 MODEL_PATH = "ml_service/model/pneumonia_cnn.keras"
 MODEL_DIR = os.path.dirname(MODEL_PATH)
-GOOGLE_DRIVE_FILE_ID = "1JvxjXGc5rTMAIMz57EkRxYlvzc6frS4E"  # your file ID
+GOOGLE_DRIVE_FILE_ID = "1ZswLsHHJDWDihWBAQ9pFnS8XGL8hJL2B"  # your file ID
 
 if not os.path.exists(MODEL_PATH):
     os.makedirs(MODEL_DIR, exist_ok=True)

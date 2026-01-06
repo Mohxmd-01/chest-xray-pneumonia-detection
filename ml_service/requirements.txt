@@ -6,4 +6,4 @@ numpy<2
 pillow
 python-multipart
 python-jose
-
+requests
