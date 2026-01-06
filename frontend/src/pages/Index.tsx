@@ -188,7 +188,7 @@ const Index = () => {
                 Everything you need for medical imaging analysis
               </h2>
               <p className="text-muted-foreground mb-8">
-                PneumoScan provides a comprehensive suite of tools to help healthcare
+                XRayIQ provides a comprehensive suite of tools to help healthcare
                 professionals make informed decisions quickly and accurately.
               </p>
               <div className="grid grid-cols-2 gap-3">

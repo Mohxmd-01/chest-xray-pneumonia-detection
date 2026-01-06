@@ -32,7 +32,7 @@ const Login = () => {
             <Activity className="h-8 w-8 text-primary-foreground" />
           </div>
           <h1 className="text-3xl font-bold text-foreground">XRayIQ</h1>
-          <p className="text-muted-foreground mt-2">AI-Powered Pneumonia Detection</p>
+          <p className="text-muted-foreground mt-2">Fast and Accurate Chest X-Ray Insights</p>
         </div>
 
         {/* Login Card */}
@@ -113,13 +113,6 @@ const Login = () => {
               </Link>
             </p>
           </div>
-        </div>
-
-        {/* Demo Credentials */}
-        <div className="mt-6 p-4 rounded-lg bg-primary/5 border border-primary/20 animate-fade-in delay-300">
-          <p className="text-xs font-medium text-primary text-center">
-            Demo Mode: Use any email/password to explore
-          </p>
         </div>
       </div>
     </div>

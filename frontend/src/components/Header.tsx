@@ -14,7 +14,7 @@ const Header = () => {
           </div>
           <div>
             <h1 className="text-lg font-bold text-foreground">XRayIQ</h1>
-            <p className="text-xs text-muted-foreground">AI-Powered Detection</p>
+            <p className="text-xs text-muted-foreground">Fast and Accurate Chest X-Ray Insights</p>
           </div>
         </div>
 

@@ -48,7 +48,7 @@ const Register = () => {
           <div className="mb-6">
             <h2 className="text-xl font-semibold text-foreground">Create Account</h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Join PneumoScan to start analyzing X-rays
+              Join XRayIQ to start analyzing X-rays
             </p>
           </div>
 
