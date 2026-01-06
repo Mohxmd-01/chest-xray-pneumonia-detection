@@ -82,6 +82,9 @@ history = model.fit(
 # -----------------------------
 # SAVE MODEL
 # -----------------------------
-os.makedirs("model", exist_ok=True)
-model.save("models/pneumonia_cnn.keras")
+# -----------------------------
+# SAVE MODEL (FIXED)
+# -----------------------------
+os.makedirs("models", exist_ok=True)
+model.save("models/pneumonia_cnn.h5")
 print("✅ Model training completed and saved!")
