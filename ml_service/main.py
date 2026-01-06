@@ -5,7 +5,7 @@ from PIL import Image
 import io
 from utils.preprocess import preprocess_image
 from utils.jwt_auth import verify_token  # 🔐 JWT verification
-
+#https://drive.google.com/file/d/1JvxjXGc5rTMAIMz57EkRxYlvzc6frS4E/view?usp=sharing
 # Optional: install gdown if not already installed
 try:
     import gdown
