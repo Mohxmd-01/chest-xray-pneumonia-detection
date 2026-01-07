@@ -16,6 +16,22 @@ export const predict = async (req, res) => {
     if (!req.file) {
       return res.status(400).json({ message: "No file uploaded" });
     }
+     // 2️⃣ Validate image (SAFE CHECK)
+    const metadata = await sharp(req.file.buffer).metadata();
+
+    // Minimum resolution (X-rays are not tiny images)
+    if (metadata.width < 200 || metadata.height < 200) {
+      return res.status(400).json({
+        message: "Invalid image. Please upload a chest X-ray image.",
+      });
+    }
+
+    // X-rays are grayscale (1 channel) or near-grayscale
+    if (metadata.channels && metadata.channels > 2) {
+      return res.status(400).json({
+        message: "Invalid image. Please upload a chest X-ray image.",
+      });
+    }
 
     // 2️⃣ Prepare form-data for FastAPI
     const form = new FormData();
